@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2>C# Development Test</h2>
+    <h3>Presented By: Cesar Canales</h3>
+</div>
+<div>
+    <h5>Requirements</h5>
+    <ol type="1">
+        <li>Use 3-tier architecture</li>
+        <span class="text-primary">Solution consists of 3 projects: DAL, BLL and Presentation<br />
+        Data flows accordingly (Respositories used in DAL, Services in BLL, Dtos in Presentation etc.)<br />
+        Using EF in Memory, so it was necessary to add basic test data.
+        </span>
+        <li>Demonstrate FIFO cost accounting method</li>
+        <span class="text-primary">Investment Service implements FIFO rules when "selling" an investment/shares (Investment->Sell)</span>
+        <li>Perform correct calculations based on user input: </li>
+        <ol type="a">
+            <li>Remaining number of Shares after the sale</li>
+            <span class="text-primary">Investment screen displays list of available shares and gets automatically updated after a "Sale""</span>
+            <li>The cost basis per share of the sold shares</li>
+            <span class="text-primary">Transaction screen displays list of transactions and displays Cost Basis Per Share for sale transactions</span>
+            <li>The cost basis per share of the remaining shares after the sale</li>
+            <span class="text-primary">Investment screen automatically calculates cost basis for remaining shares</span>
+            <li>The total profit or loss of the sale</li>
+            <span class="text-primary">When selling investments FIFO rules are applied automatically and it's reflected in the Transaction History'</span>
+        </ol>
+    </ol>
+
+    <div class="text-danger">
+        Please keep in mind that due to time limit I had to focus on key aspects of the requirements above, which means I didn't have enough time for validations, clean-up, refactoring etc.
+    </div>
+    
+</div>

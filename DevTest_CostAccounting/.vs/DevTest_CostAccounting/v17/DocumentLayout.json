@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|c:\\users\\ces_c\\source\\repos\\devtest_costaccounting\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|c:\\users\\ces_c\\source\\repos\\devtest_costaccounting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95AF731-050F-431A-92F2-9F85C0561746}|..\\BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\ces_c\\source\\repos\\businesslogiclayer\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32640B79-4D8D-4B9B-AC2B-76DC65175EEE}|..\\DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\ces_c\\source\\repos\\dataaccesslayer\\repositories\\contracts\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|c:\\users\\ces_c\\source\\repos\\devtest_costaccounting\\views\\transaction\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|solutionrelative:views\\transaction\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|c:\\users\\ces_c\\source\\repos\\devtest_costaccounting\\views\\client\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|solutionrelative:views\\client\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32640B79-4D8D-4B9B-AC2B-76DC65175EEE}|..\\DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\ces_c\\source\\repos\\dataaccesslayer\\entities\\investment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|c:\\users\\ces_c\\source\\repos\\devtest_costaccounting\\views\\investment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11F6366F-0725-4215-AC37-D02CD482F0CC}|DevTest_CostAccounting.csproj|solutionrelative:views\\investment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T12:50:18.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\ces_c\\source\\repos\\BusinessLogicLayer\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogicLayer\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Users\\ces_c\\source\\repos\\BusinessLogicLayer\\Services\\ClientService.cs",
+              "RelativeToolTip": "..\\BusinessLogicLayer\\Services\\ClientService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T12:25:02.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ces_c\\source\\repos\\DataAccessLayer\\Repositories\\Contracts\\ITransactionRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessLayer\\Repositories\\Contracts\\ITransactionRepository.cs",
+              "ToolTip": "C:\\Users\\ces_c\\source\\repos\\DataAccessLayer\\Repositories\\Contracts\\ITransactionRepository.cs",
+              "RelativeToolTip": "..\\DataAccessLayer\\Repositories\\Contracts\\ITransactionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T12:24:31.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Views\\Client\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Client\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Views\\Client\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Client\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T12:08:30.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Views\\Transaction\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Transaction\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Views\\Transaction\\Index.cshtml",
+              "RelativeToolTip": "Views\\Transaction\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAIBJwFEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:15:44.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Investment.cs",
+              "DocumentMoniker": "C:\\Users\\ces_c\\source\\repos\\DataAccessLayer\\Entities\\Investment.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessLayer\\Entities\\Investment.cs",
+              "ToolTip": "C:\\Users\\ces_c\\source\\repos\\DataAccessLayer\\Entities\\Investment.cs",
+              "RelativeToolTip": "..\\DataAccessLayer\\Entities\\Investment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T05:59:50.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Views\\Investment\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Investment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Views\\Investment\\Index.cshtml",
+              "RelativeToolTip": "Views\\Investment\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T07:02:51.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ces_c\\source\\repos\\DevTest_CostAccounting\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwDQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T22:04:22.47Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

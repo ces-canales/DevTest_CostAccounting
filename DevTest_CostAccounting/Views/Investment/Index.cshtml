@@ -1,0 +1,89 @@
+﻿@model IEnumerable<InvestmentModel>
+
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Investments</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+    &nbsp;&nbsp;
+    <a asp-action="Sell">Sell</a>
+</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Cost Basis per share
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shares)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var group in Model.GroupBy(item => new { item.ClientId, item.CompanyId }))
+        {
+            @foreach (var item in group)
+            {
+                <tr>
+                    <td></td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ClientId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Shares)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cost)
+                    </td>
+                    <td>
+                        @* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) | *@
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+            <tr>
+                <td colspan="7">
+                    @{
+                        decimal CostBasis = group.Sum(x => x.Shares * x.Cost) / group.Sum(y => y.Shares);
+                    }
+                    @CostBasis.ToString("0.00")
+                </td>
+            </tr>
+    }
+    </tbody>
+</table>
+
