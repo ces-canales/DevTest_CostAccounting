@@ -31,7 +31,7 @@ namespace DataAccessLayer.Repositories
 
         public async Task<IEnumerable<Investment>> GetInvestments()
         {
-            return await _dbContext.Investments.ToListAsync();
+            return await _dbContext.Investments.Include(cli=>cli.Client).Include(cmp=>cmp.Company).ToListAsync();
         }
 
         public async Task InsertInvestment(Investment Investment)

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BusinessLogicLayer.Services.Dtos;
+using System.ComponentModel.DataAnnotations;
 
 namespace DevTest_CostAccounting.Models
 {
@@ -43,6 +44,10 @@ namespace DevTest_CostAccounting.Models
         public DateTime Date { get; set; }
         public int Shares { get; set; }
         public decimal Rate { get; set; }
+
+        public int MethodId { get; set; }
+
+        public TrxResult TrxResult { get; set; }
 
     }
 }

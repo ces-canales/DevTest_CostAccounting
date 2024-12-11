@@ -67,14 +67,13 @@ namespace DevTest_CostAccounting
             );
             context.Investments.AddRange(
                 new Investment { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("01/01/2024"), Shares = 100, Cost = Decimal.Parse("20.00") },
-                new Investment { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("02/01/2024"), Shares = 150, Cost = Decimal.Parse("30.00") },
-                new Investment { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("03/01/2024"), Shares = 120, Cost = Decimal.Parse("10.00") }
+                new Investment { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("02/01/2024"), Shares = 200, Cost = Decimal.Parse("30.00") }
             );
-            context.Transactions.AddRange(
-                new Transaction { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("01/01/2024"), TypeId = 1, Shares = 100, Rate = Decimal.Parse("20.00") },
-                new Transaction { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("02/01/2024"), TypeId = 1, Shares = 150, Rate = Decimal.Parse("30.00") },
-                new Transaction { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("03/01/2024"), TypeId = 1, Shares = 120, Rate = Decimal.Parse("10.00") }
-            );
+            //context.Transactions.AddRange(
+            //    new Transaction { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("01/01/2024"), TypeId = 1, Shares = 100, Rate = Decimal.Parse("20.00") },
+            //    new Transaction { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("02/01/2024"), TypeId = 1, Shares = 150, Rate = Decimal.Parse("30.00") },
+            //    new Transaction { ClientId = 1, CompanyId = 1, Date = DateTime.Parse("03/01/2024"), TypeId = 1, Shares = 120, Rate = Decimal.Parse("10.00") }
+            //);
             context.SaveChanges();
         }
     }

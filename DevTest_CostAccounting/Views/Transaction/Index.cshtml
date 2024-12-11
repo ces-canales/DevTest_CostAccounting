@@ -17,11 +17,17 @@
             <th>
                 @Html.DisplayNameFor(model => model.Id)
             </th>
-            <th>
+           @*  <th>
                 @Html.DisplayNameFor(model => model.ClientId)
-            </th>
+            </th> *@
             <th>
+                @Html.DisplayNameFor(model => model.ClientName)
+            </th>
+            @* <th>
                 @Html.DisplayNameFor(model => model.CompanyId)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Date)
@@ -50,11 +56,17 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Id)
                 </td>
-                <td>
+               @*  <td>
                     @Html.DisplayFor(modelItem => item.ClientId)
-                </td>
+                </td> *@
                 <td>
+                    @Html.DisplayFor(modelItem => item.ClientName)
+                </td>
+                @* <td>
                     @Html.DisplayFor(modelItem => item.CompanyId)
+                </td> *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyName)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Date)

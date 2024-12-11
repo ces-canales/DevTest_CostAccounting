@@ -33,9 +33,9 @@ namespace BusinessLogicLayer.Services
             return new InvestmentDto(
                 investment.Id,
                 investment.ClientId,
-                //investment.Client.Name,
+                investment.Client.Name,
                 investment.CompanyId,
-                //investment.Company.Name,
+                investment.Company.Name,
                 investment.Date,
                 investment.Shares,
                 investment.Cost
@@ -47,7 +47,9 @@ namespace BusinessLogicLayer.Services
             return new TransactionDto(
                 transaction.Id,
                 transaction.ClientId,
+                transaction.Client.Name,
                 transaction.CompanyId,
+                transaction.Company.Name,
                 transaction.Date,
                 transaction.TypeId,
                 transaction.Shares,

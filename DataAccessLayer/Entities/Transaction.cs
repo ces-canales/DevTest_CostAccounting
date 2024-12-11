@@ -41,6 +41,9 @@ namespace DataAccessLayer.Entities
 
         [Range(typeof(decimal), "0", "79228162514264337593543950335")]
         public decimal SaleCostBasis { get;set; }
+
+        public virtual Client Client { get; set; }
+        public virtual Company Company { get; set; }
     }
 
     public class TransactionType

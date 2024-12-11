@@ -26,7 +26,7 @@ namespace DataAccessLayer.Repositories
 
         public async Task<IEnumerable<Transaction>> GetTransactions()
         {
-            return await _dbContext.Transactions.ToListAsync();
+            return await _dbContext.Transactions.Include(cli=>cli.Client).Include(cmp=>cmp.Company).ToListAsync();
         }
 
         public async Task<Transaction> GetTransactionById(int id)

@@ -39,6 +39,11 @@
                 <input asp-for="Rate" class="form-control" />
                 <span asp-validation-for="Rate" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="MethodId" class="control-label"></label>
+                @Html.DropDownListFor(model => model.MethodId, (IEnumerable<SelectListItem>)ViewData["AccountingMethods"], "[Select AccountingMethod]", new { @class = "form-control" })
+                <span asp-validation-for="MethodId" class="text-danger"></span>
+            </div>
             <div>
                 <br />
             </div>
@@ -46,6 +51,28 @@
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
+    </div>
+    <div class="col-md-4">Results
+        <div class="form-group">
+            <label asp-for="TrxResult.SharesRemainingTotal" class="control-label"></label>
+            <input asp-for="TrxResult.SharesRemainingTotal" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="TrxResult.SharesRemainingLastInvestment" class="control-label"></label>
+            <input asp-for="TrxResult.SharesRemainingLastInvestment" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="TrxResult.SharesRemainingCostBasis" class="control-label"></label>
+            <input asp-for="TrxResult.SharesRemainingCostBasis" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="TrxResult.SaleProfit" class="control-label"></label>
+            <input asp-for="TrxResult.SaleProfit" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="TrxResult.SaleCostBasis" class="control-label"></label>
+            <input asp-for="TrxResult.SaleCostBasis" class="form-control" />
+        </div>
     </div>
 </div>
 <div>

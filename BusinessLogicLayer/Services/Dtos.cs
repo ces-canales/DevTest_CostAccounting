@@ -36,9 +36,9 @@ namespace BusinessLogicLayer.Services.Dtos
     public record InvestmentDto
         ( int Id, 
         int ClientId,
-        //string ClientName,
+        string ClientName,
         int CompanyId,
-        //string CompanyName,
+        string CompanyName,
         DateTime Date, 
         int Shares, 
         decimal Cost);
@@ -56,13 +56,16 @@ namespace BusinessLogicLayer.Services.Dtos
         [Required] int CompanyId,
         [Required] DateTime Date,
         [Required] int Shares,
-        [Required] decimal Rate
+        [Required] decimal Rate,
+        [Required] int MethodId
     );
 
     public record TransactionDto( 
         int Id, 
-        int ClientId, 
-        int CompanyId, 
+        int ClientId,
+        string ClientName,
+        int CompanyId,
+        string CompanyName,
         DateTime Date, 
         int TypeId, 
         int Shares, 
@@ -81,4 +84,12 @@ namespace BusinessLogicLayer.Services.Dtos
         decimal SaleProfit,
         decimal SaleCostBasis
     );
+
+    public record TrxResult(
+        int SharesRemainingTotal,
+        int SharesRemainingLastInvestment,
+        decimal SharesRemainingCostBasis,
+        decimal SaleProfit,
+        decimal SaleCostBasis
+        );
 }

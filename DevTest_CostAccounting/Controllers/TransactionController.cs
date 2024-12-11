@@ -1,6 +1,8 @@
 ﻿using BusinessLogicLayer.Services;
 using BusinessLogicLayer.Services.Contracts;
 using BusinessLogicLayer.Services.Dtos;
+using DataAccessLayer.Entities;
+using DevTest_CostAccounting.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +21,20 @@ namespace DevTest_CostAccounting.Controllers
         public async Task<IActionResult> Index(int typeid)
         {
             IEnumerable<TransactionDto> transactions = await _transactionService.GetTransactions();
+            IEnumerable<TransactionModel> ftransactions = transactions.Select(i => new TransactionModel()
+            {
+                Id = i.Id,
+                ClientId = i.ClientId,
+                ClientName = i.ClientName,
+                CompanyId = i.CompanyId,
+                CompanyName = i.CompanyName,
+                Date = i.Date,
+                TypeId = i.TypeId,
+                Shares = i.Shares,
+                Rate = i.Rate,
+                SaleProfit = i.SaleProfit,
+                SaleCostBasis = i.SaleCostBasis
+            });
 
             if (typeid == 1 || typeid ==2)
             {

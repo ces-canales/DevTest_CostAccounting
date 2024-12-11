@@ -28,9 +28,9 @@ namespace DevTest_CostAccounting.Controllers
             {
                 Id = i.Id,
                 ClientId = i.ClientId,
-                //ClientName = i.ClientName,
+                ClientName = i.ClientName,
                 CompanyId = i.CompanyId,
-                //CompanyName = i.CompanyName,
+                CompanyName = i.CompanyName,
                 Date = i.Date,
                 Shares = i.Shares,
                 Cost = i.Cost
@@ -85,6 +85,7 @@ namespace DevTest_CostAccounting.Controllers
             IEnumerable<CompanyDto> companies = await _companyService.GetCompanies();
             ViewData["ClientList"] = clients.Select(x => new SelectListItem { Value = x.Id.ToString(), Text = x.Name }).ToList();
             ViewData["CompanyList"] = companies.Select(x => new SelectListItem { Value = x.Id.ToString(), Text = x.Name }).ToList();
+            ViewData["AccountingMethods"] = new List<SelectListItem>() { new SelectListItem("FIFO", "1"), new SelectListItem("LIFO", "2") };
             return View();
         }
 
@@ -93,23 +94,40 @@ namespace DevTest_CostAccounting.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Sell(IFormCollection collection)
         {
+            IEnumerable<ClientDto> clients = await _clientService.GetClients();
+            IEnumerable<CompanyDto> companies = await _companyService.GetCompanies();
+            ViewData["ClientList"] = clients.Select(x => new SelectListItem { Value = x.Id.ToString(), Text = x.Name }).ToList();
+            ViewData["CompanyList"] = companies.Select(x => new SelectListItem { Value = x.Id.ToString(), Text = x.Name }).ToList();
+            ViewData["AccountingMethods"] = new List<SelectListItem>() { new SelectListItem("FIFO", "1"), new SelectListItem("LIFO", "2") };
             var sale = new SellInvestmentDto(
                 Int16.Parse(collection["ClientId"]),
                 Int16.Parse(collection["CompanyId"]),
                 DateTime.Parse(collection["Date"]),
                 Int16.Parse(collection["Shares"]),
-                Decimal.Parse(collection["Rate"])
+                Decimal.Parse(collection["Rate"]),
+                Int16.Parse(collection["MethodId"])
             );
+
+            SellInvestmentModel inv = new SellInvestmentModel()
+            {
+                ClientId = sale.ClientId,
+                CompanyId = sale.CompanyId,
+                Date = sale.Date,
+                Shares = sale.Shares,
+                Rate = sale.Rate,
+                MethodId = sale.MethodId
+            };
 
             try
             {
-                await _investmentService.SellInvestment(sale);
-                return RedirectToAction(nameof(Index));
+                TrxResult Trx = await _investmentService.SellInvestment(sale);
+                inv.TrxResult = Trx;
             }
             catch
             {
-                return View();
+                throw;
             }
+            return View(inv);
         }
 
         // GET: InvestmentController/Edit/5

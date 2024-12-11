@@ -15,7 +15,7 @@ namespace BusinessLogicLayer.Services.Contracts
         public Task<IEnumerable<InvestmentDto>> GetInvestmentsByClientId(int clientid);
         public Task<IEnumerable<InvestmentDto>> GetInvestments();
         public Task InsertInvestment(CreateInvestmentDto Investment);
-        public Task SellInvestment(SellInvestmentDto Investment);
+        public Task<TrxResult> SellInvestment(SellInvestmentDto Investment);
 
         public Task DeleteInvestment(int id);
 
